@@ -11,18 +11,24 @@
 </ion-header>
 <ion-content>
   
-  
-  <ion-card *ngFor="let item of contas" (click)="abreDetalhe(item)">
 
-    <ion-item>
-  
-      <h2>{{item.competencia}}</h2>
-      <p>Vencimento: {{item.vencimento}}</p>
-      <p> Valor: {{item.valor}}</p>
+  <ion-card>
+      <ion-card-header>
+        Historico de Contas
+      </ion-card-header>
     
-    </ion-item>
-   
-  
-  </ion-card>
+      <ion-list *ngFor="let item of contas" (click)="abreDetalhe(item)">
+        <button ion-item>
+            <h3>{{item.competencia}}</h3>
+            <p>Vencimento: {{item.vencimento}}</p>
+            <p> Valor: {{item.valor}}</p>
+         </button>
+
+      </ion-list>
+    </ion-card>
+    
+
+
+
   
 </ion-content>

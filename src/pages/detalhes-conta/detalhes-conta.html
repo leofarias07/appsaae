@@ -14,18 +14,56 @@
 
 
 <ion-content padding>
-  <ion-grid>
+  <ion-grid class="detconta">
     <ion-row>
-      <ion-col col-6><h5>Instalação: {{item.instalacao}}</h5></ion-col>
-      <ion-col col-6><h5>: {{item.numero_fatura}}</h5></ion-col>
+      <ion-col col-12>
+        <h5>Instalação:</h5>
+        <p>{{item.instalacao}}</p>
+      </ion-col>
+     
     </ion-row>
     <ion-row>
-      <ion-col col-6><h5>{{item.competencia}}</h5></ion-col>
-      <ion-col col-6><h5>Valor: {{item.valor}}</h5></ion-col>
+      <ion-col col-6>
+        <h5>Competencia:</h5>
+        <p>{{item.competencia}}</p>
+      </ion-col>
+      <ion-col col-6>
+        <h5>Valor: </h5>
+        <p>{{item.valor}}</p>
+      </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col col-6><h5>Vencimento: {{item.vencimento}}</h5></ion-col>
-      <ion-col col-6><h5>Situação: {{item.situacao}}</h5></ion-col>
+      <ion-col col-6>
+        <h5>Vencimento: </h5>
+        <p>{{item.vencimento}}</p>
+      </ion-col>
+      <ion-col col-6>
+        <h5>Situação: </h5>
+        <p>{{item.situacao}}</p>
+      </ion-col>
     </ion-row>
+
+    <ion-row>
+        <ion-col col-12>
+         <h2>Código de Barras</h2>
+         <hr>
+         <p>{{item.codigo_barras}}</p>
+
+        </ion-col>
+      
+      </ion-row>
+
+      <ion-row>
+          <ion-col col-6>
+              <button ion-button color="light">CÓPIAR CODIGO</button>
+  
+          </ion-col>
+          <ion-col col-6>
+              <button ion-button color="light">COMPARTILHAR</button>
+     
+             </ion-col>
+        
+        </ion-row>
+
   </ion-grid>
 </ion-content>

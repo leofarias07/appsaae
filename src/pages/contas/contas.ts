@@ -16,10 +16,16 @@ import { DetalhesContaPage } from '../detalhes-conta/detalhes-conta';
 })
 export class ContasPage {
   contas = [
-    {instalacao:1001,numero_fatura:9879797987979,competencia:"Fevereiro/2018",valor:"R$ 30,90",vencimento:"28/02/2018",situacao:"Fatura Paga"},
-    {instalacao:1002,numero_fatura:9879797987979,competencia:"Março/2018",valor:"R$ 30,90",vencimento:"28/02/2018",situacao:"Fatura Paga"},
-    {instalacao:1003,numero_fatura:9879797987979,competencia:"Maio/2018",valor:"R$ 30,90",vencimento:"28/02/2018",situacao:"Fatura Paga"},
-    {instalacao:1004,numero_fatura:9879797987979,competencia:"Abril/2018",valor:"R$ 30,90",vencimento:"28/02/2018",situacao:"Fatura Paga"},
+    {instalacao:1001,competencia:"Fevereiro/2018",valor:"R$ 30,90",vencimento:"28/02/2018",codigo_barras:"8465000001-9 67490024030-2 30031020342-1 11708041802-3",situacao:"Fatura Paga"},
+    {instalacao:1002,competencia:"Março/2018",valor:"R$ 30,90",vencimento:"28/02/2018",codigo_barras:"8465000001-9 67490024030-2 30031020342-1 11708041802-3",situacao:"Fatura Paga"},
+    {instalacao:1003,competencia:"Abril/2018",valor:"R$ 30,90",vencimento:"28/02/2018",codigo_barras:"8465000001-9 67490024030-2 30031020342-1 11708041802-3",situacao:"Fatura Paga"},
+    {instalacao:1004,competencia:"Maio/2018",valor:"R$ 30,90",vencimento:"28/02/2018",codigo_barras:"8465000001-9 67490024030-2 30031020342-1 11708041802-3",situacao:"Fatura Paga"},
+    {instalacao:1004,competencia:"Junho/2018",valor:"R$ 30,90",vencimento:"28/02/2018",codigo_barras:"8465000001-9 67490024030-2 30031020342-1 11708041802-3",situacao:"Fatura Paga"},
+    {instalacao:1004,competencia:"Julho/2018",valor:"R$ 30,90",vencimento:"28/02/2018",codigo_barras:"8465000001-9 67490024030-2 30031020342-1 11708041802-3",situacao:"Fatura Paga"},
+    {instalacao:1004,competencia:"Agosto/2018",valor:"R$ 30,90",vencimento:"28/02/2018",codigo_barras:"8465000001-9 67490024030-2 30031020342-1 11708041802-3",situacao:"Fatura Paga"},
+    {instalacao:1004,competencia:"Outubro/2018",valor:"R$ 30,90",vencimento:"28/02/2018",codigo_barras:"8465000001-9 67490024030-2 30031020342-1 11708041802-3",situacao:"Fatura Paga"},
+    {instalacao:1004,competencia:"Setembro/2018",valor:"R$ 30,90",vencimento:"28/02/2018",codigo_barras:"8465000001-9 67490024030-2 30031020342-1 11708041802-3",situacao:"Fatura Paga"},
+    {instalacao:1004,competencia:"Novembro/2018",valor:"R$ 30,90",vencimento:"28/02/2018",codigo_barras:"8465000001-9 67490024030-2 30031020342-1 11708041802-3",situacao:"Fatura Paga"}
   ];
  
     constructor(public navCtrl: NavController, public navParams: NavParams) {
